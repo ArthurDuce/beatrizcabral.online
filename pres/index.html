@@ -1,65 +1,56 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-  /* Estilos padrão */
-  body {
-    background-image: url("background-image.jpg");
-    background-size: cover;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-  }
-  .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 700px;
-  }
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: black;
-  }
-  .btn {
-  border-radius: 10px;
-  padding: 5px 10px;
-  font-size: 30px;
-  background-color: #50d636;
-  outline: none;
-  color: black;
-  text-decoration: none;
-  }
-  .disclaimer {
-    color: black;
-    margin-top: 20px;
-    font-size: 12px;
-  }
-  .policy {
-    color: black;
-    margin-top: 20px;
-    font-size: 12px;
-  }
-  
-  /* Regra específica para dispositivos móveis */
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 20px;
-    }
-  }
-</style>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <title>Verificação Concluída</title>
 
-  </head>
-  <body>
-    <div class="content">
-      <h1>Página de Segurança</h1>
-      <a href="https://beatrizcabral.online/" class="btn">Clique Aqui para Continuar ao Vídeo</a>
-      <p class="disclaimer">Disclaimer: Este site age de forma individual retirando a responsabilidade de qualquer rede social ou fonte de propaganda. Nós somos uma instituição independente e não temos ligação com qualquer outro site.</p>
-      <p class="policy">Políticas de Termos e Uso e Políticas de Segurança</p>
+  
+
+</head>
+<body> 
+  <div class="container">
+    <div class="black">
+      <div>
+        <div class="question">
+          <h1><font color="skin color">Verificação de Segurança Concluída</font></h1>
+          <p>Página Protegida e Verificada</p>
+        </div>
+        <div class="answer">
+          <a class="btn" href="">CLIQUE AQUI PARA ACESSAR SEU VÍDEO</a>
+        </div>
+      </div>    
     </div>
-  </body>
+    <p style="text-align: center; font-weight: bold;"> <font color="black">© 2022 – O conteúdo disponibilizado nesta página é apenas para fins informativos. Não deve ser interpretado como aconselhamento financeiro, jurídico ou de qualquer outra natureza. Qualquer ação tomada com base nas informações contidas nesta página é tomada por sua conta e risco. Nós não seremos responsáveis por quaisquer perdas ou danos decorrentes da dependência das informações fornecidas nesta página.</p></font>
+    <div>
+      
+    </div>
+    <div>
+      
+    </div>
+
+CNPJ: 04.455.065/0001-82 // © 2022 - Nova Aurora. Todos os Direitos Reservados.
+
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</script>
+<script>
+(function() {
+     const utmParamQueryString = new URLSearchParams(window.location.search);
+     if (utmParamQueryString.toString()) {
+          var navLinks = document.querySelectorAll('a');
+          navLinks.forEach(function(item) {
+               if (item.href.indexOf('siteaqui') !== -1) {
+                    if (item.href.indexOf('?') === -1) {
+                         item.href += '?' + utmParamQueryString.toString();
+                    } else {
+                         item.href += '&' + utmParamQueryString.toString();
+                    }
+               }
+          });
+     }
+})();
+</script>
+</body>
 </html>
